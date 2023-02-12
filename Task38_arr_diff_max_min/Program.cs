@@ -14,24 +14,26 @@ int[] GetArray(int size, int start, int finish)
 
 int arrDiffMaxMin(int[] arr)
 {
-    int size=arr.Length;
-    int diff=0;
-    int max=arr[0];
-    int min=arr[0];
+    int size = arr.Length;
+    int diff = 0;
+    int max = arr[0];
+    int min = arr[0];
     for (int i = 1; i < size; i++)
     {
-        if (max<arr[i]) max=arr[i];
-        if (min>arr[i]) min=arr[i];
+        if (max < arr[i])
+            max = arr[i];
+        if (min > arr[i])
+            min = arr[i];
     }
-    diff=max-min;
+    diff = max - min;
     return diff;
 }
 
-Console.Clear(); 
+Console.Clear();
 Console.WriteLine("Введите количество элементов массива: ");
-int kolich= Int32.Parse(Console.ReadLine());
+int kolich = Int32.Parse(Console.ReadLine());
 int[] array = GetArray(kolich, 1, 99);
-Console.Write("["+String.Join(", ", array)+"]");
+Console.Write("[" + String.Join(", ", array) + "]");
 
 int diff = arrDiffMaxMin(array);
-Console.Write(" -> "+diff);
+Console.Write(" -> " + diff);
