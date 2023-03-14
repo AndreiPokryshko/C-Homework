@@ -19,8 +19,7 @@ void PrintArr(int[] arr)
     {
         Console.Write(arr[i] + ", ");
     }
-    Console.Write(arr[size - 1]+"]");
-
+    Console.Write(arr[size - 1] + "]");
 }
 
 int[] myarray = fillArr();

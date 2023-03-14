@@ -11,8 +11,9 @@ int GetNum(string text)
 
 int RecSumRange(int from, int to)
 {
-    if (from==to) return to;
-    return from +RecSumRange(from+1,to);
+    if (from == to)
+        return to;
+    return from + RecSumRange(from + 1, to);
 }
 
 int numM = GetNum("Введите М: ");

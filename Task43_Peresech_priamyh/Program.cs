@@ -26,6 +26,8 @@ double k1 = GetNum("Введите к1: ");
 double k2 = GetNum("Введите к2: ");
 double b1 = GetNum("Введите в1: ");
 double b2 = GetNum("Введите в2: ");
+Console.Write($"{k1}, {k2}, {b1}, {b2}");
+
 if (k1 == k2)
 {
     Console.Write("Упс.. Сорян, прямые параллельны. :)");

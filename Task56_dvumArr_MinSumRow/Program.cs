@@ -54,9 +54,9 @@ int RowMinSumMatrix(int[,] matrix)
             arrTemp[i] = sum;
         }
     }
+int minSum = arrTemp[0];
     for (int k = 0; k < arrTemp.Length; k++)
     {
-        int minSum = arrTemp[0];
         if (arrTemp[k] < minSum)
         {
             minSum = arrTemp[k];

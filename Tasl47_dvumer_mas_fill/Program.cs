@@ -17,7 +17,7 @@ double[,] GenMatrix(int rows, int columns, int from, int to)
     {
         for (int j = 0; j < columns; j++)
         {
-            result[i, j] = new Random().Next(from, to+1);
+            result[i, j] = new Random().Next(from, to + 1);
         }
     }
     return result;
@@ -32,7 +32,7 @@ void ShowMatrix(double[,] matrix)
         for (int j = 0; j < columns; j++)
         {
             //Console.Write(matrix[i, j] + "\t"); //выравнивание по умолчанию влево
-            Console.Write(String.Format(" {0,3}", matrix[i,j]));//выравнивание вправо
+            Console.Write(String.Format(" {0,3}", matrix[i, j])); //выравнивание вправо
         }
         Console.WriteLine();
     }
